@@ -1,0 +1,109 @@
+J1 — The Follow-Up Meeting Invite
+Line: Our 'this could have been an email' meeting ran over, so we booked a follow-up meeting to write the email.
+Chars: 106
+Turn: the fix for a pointless meeting is another meeting
+
+J2 — The Jammed Resignation Letter
+Line: The office printer only ever jams when I print my resignation letter, which is how I've been here nine years.
+Chars: 109
+Turn: printer malice reframed as the reason for career longevity
+
+J3 — The Reply-All Blunder
+Line: I accidentally replied-all to 3,000 people, and it was the first email of mine anyone at this company has ever read.
+Chars: 116
+Turn: humiliation flips into the only engagement you've ever had
+
+J4 — The Friday 4:55 Calendar Invite
+Line: My manager sent a calendar invite titled 'quick chat' for Friday at 4:55, so I've started packing up my desk plant.
+Chars: 115
+Turn: the invite's euphemism decoded as a firing
+
+J5 — The Fifteen-Minute Standup
+Line: Our standup is meant to last fifteen minutes, and it does, per person.
+Chars: 70
+Turn: 'per person' detonates the time-box
+
+J6 — The Quick Question Chair
+Line: My coworker leaned over at 2pm with 'a quick question'; I'm writing this from the same chair at 5:40.
+Chars: 101
+Turn: the time stamp is the punchline
+
+J7 — The Out-of-Office Thank-Yous
+Line: My out-of-office reply is the only email I've sent all year that people actually thanked me for.
+Chars: 96
+Turn: praise lands on the one email saying you're not there
+
+J8 — The FINAL_v2 Folder
+Line: Our shared drive has fourteen files called 'FINAL_v2_REAL_final', and the actual final one is attached to an email from 2019.
+Chars: 125
+Turn: the real file lives outside the system built to hold it
+
+J9 — The Consistent Status Update
+Line: My performance review praised my 'consistent output', which is fair: I've sent the same status update since March.
+Chars: 114
+Turn: the compliment is literally true for the wrong reason
+
+J10 — The Kitchen Sink Mug
+Line: There's a mug in our office kitchen sink so old it now has its own badge, a parking space and a seat at the all-hands.
+Chars: 118
+Turn: the abandoned mug gets promoted to employee
+
+J11 — The Badge Reader at 9am
+Line: The badge reader takes four tries to let me in at 9am and none at all to log that I left at 4:58.
+Chars: 97
+Turn: the machine is only efficient at snitching
+
+J12 — The Slow VPN File
+Line: Our VPN is so slow that by the time the file opened, the project had been cancelled and I'd been reorganised.
+Chars: 109
+Turn: the wait outlasts the job itself
+
+J13 — The Real Group Chat
+Line: The team group chat went silent the moment the boss joined, and by lunch there was a new one called 'Team Chat (real)'.
+Chars: 119
+Turn: the shadow chat's name says it all
+
+J14 — The Per-My-Last-Email Warning
+Line: I wrote 'per my last email' so many times this week that HR asked me to stop threatening people.
+Chars: 96
+Turn: the passive-aggressive phrase is treated as a literal threat
+
+J15 — The Leaving Card
+Line: I signed the leaving card 'You'll be so missed!' before noticing the name on the front was mine.
+Chars: 96
+Turn: the cheerful signature becomes your own redundancy notice
+
+J16 — Gary's Hot-Desk Banana
+Line: We went hot-desking so nobody owns a desk, but Gary's mug, coat and banana have held the same one since 2021.
+Chars: 109
+Turn: the banana outranks company policy
+
+J17 — The Dead-Laptop IT Ticket
+Line: I logged an IT ticket saying my laptop won't turn on, and got an auto-reply telling me to check its status online.
+Chars: 114
+Turn: the help requires the broken thing
+
+J18 — The All-Hands Family Speech
+Line: At the all-hands the CEO said we're one big family, and three days later, like any family, half of us were cut out of the will.
+Chars: 127
+Turn: 'family' paid off as layoffs
+
+J19 — The Stolen Lunch Note
+Line: Someone stole my lunch from the office fridge, then left a sticky note on the empty box: 'needs salt.'
+Chars: 102
+Turn: the thief leaves a review
+
+J20 — The Mute Button Update
+Line: I gave a passionate ten-minute update on mute, and afterwards my boss said it was my best one yet.
+Chars: 98
+Turn: silence is your best work: nobody was listening anyway
+
+
+Proxy judging (Groq openai/gpt-oss-120b as judge-brief proxy, max_tokens 1024, run by the operator)
+Note: the first tournament run hit Groq TPM rate limits (HTTP 429) on 6 matches; those 6 were re-judged with backoff and the bracket was replayed from real verdicts only. All verdicts below are real Groq verdicts.
+R1: J2>J1 (m3), J4>J3 (m3), J6>J5 (m2), J8>J7 (m3), J10>J9 (m3), J11>J12 (m3), J14>J13 (m3), J15>J16 (m3), J18>J17 (m2), J19>J20 (m4)
+R2: J2>J4 (m3), J6>J8 (m2), J10>J11 (m3), J15>J14 (m3), J18>J19 (m2)
+R3: J6>J2 (m2), J10>J15 (m3); bye J18
+SF: J6>J10 (m3); bye J18
+F: J6>J18 (m4)
+CHAMPION: J6 "The Quick Question Chair" — My coworker leaned over at 2pm with 'a quick question'; I'm writing this from the same chair at 5:40. (101 chars)
