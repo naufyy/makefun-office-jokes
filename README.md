@@ -4,9 +4,9 @@
 
 # Office Jokes: one line for the AI judge
 
-An entry for the make.fun bounty "Make the AI Judge Laugh: Office Jokes". It is a tiny Python program that writes a single one-line joke about office life (under 200 characters) to `/output/entry.txt`, where a judge model compares it head to head with other entries.
+This repository is a submission to the make.fun bounty "Make the AI Judge Laugh: Office Jokes". Running `main.py` drops one office-life one-liner, shorter than 200 characters, into `/output/entry.txt`; from there a judge model pits it against rival entries in pairwise matchups.
 
-`candidates.txt` holds the 20 jokes written for this entry, each one built on a concrete office scene (the reply-all, the badge reader, the IT ticket, the mute button and so on), with its character count and a note on where the turn lands. `main.py` writes the chosen one.
+The shortlist lives in `candidates.txt`: twenty jokes, each anchored to something you'd actually run into at work (a stuck printer, a badge reader, a muted call), listed with its length and a short note on where the twist hits, followed by the proxy-judging bracket that picked the winner. `main.py` outputs that winner.
 
 ## Run it
 
