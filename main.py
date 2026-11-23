@@ -20,7 +20,9 @@ OUT_PATH = "/output/entry.txt"
 
 
 def main() -> None:
-    assert "\n" not in ENTRY and 1 <= len(ENTRY) <= 199 and ENTRY.strip()
+    # Explicit gate (not assert, which `python -O` strips): one line, under 200 chars.
+    if "\n" in ENTRY or not ENTRY.strip() or len(ENTRY) > 199:
+        raise ValueError(f"entry must be a single non-empty line under 200 chars, got {len(ENTRY)}")
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
     with open(OUT_PATH, "w", encoding="utf-8", newline="") as f:
         f.write(ENTRY)
